@@ -81,6 +81,7 @@ function calcularPerimetroTriangulo(){
     const lado1 = parseInt(input.value);
     const lado2 = parseInt(input1.value);
     const base = parseInt(input2.value);
+    esIsosceles(lado1, lado2, base);
 
     const perimetroTrian = perimetroTriangulo(lado1, lado2, base);
     alert(`El perimetro del triangulo es  ${perimetroTrian}`);
@@ -98,6 +99,24 @@ function calcularAreaTriangulo(){
     alert(`El area del triangulo es ${areaTrian}`);
 }
 
+
+function esIsosceles(lado1, lado2, base){
+    
+    if(lado1 === lado2 || lado1 === base || lado2 === base){
+        let cateto1 = base / 2;
+        let cateto2 = lado1
+        let altura = Math.sqrt(Math.pow(cateto2,2) - Math.pow(cateto1,2));
+
+        alert(`Es un triangulo isosceles`)
+        alert(`La altura del triangulo es: ${altura}`);
+
+
+    }
+    else{
+
+    }
+
+}
 //Para el circulo
 
 function calcularPerimetroCirculo(){
@@ -115,3 +134,4 @@ function calcularAreaCirculo(){
 
     alert(`El valor del area es ${areaCir}`);
 }
+
