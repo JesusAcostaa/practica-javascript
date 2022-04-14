@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -14,23 +15,25 @@
       <p>Este es el primer taller del curso práctico de JavaScript</p>
     </header>
   
-    <section>
-      <h2>Calcula el área y perímetro de un cuadrado</h2>
-      <form>
-        <label for="InputCuadrado">
-          Escribe cuánto mide cada lado de tu cuadrado:
-        </label>
-        <input id="InputCuadrado" type="number" />
-        <button type="button" onclick="calcularPerimetroCuadrado()">
-          Calcular el perímetro
-        </button>
-        <button type="button" onclick="calcularAreaCuadrado()">
-          Calcular el área
-        </button>
-      </form>
-    </section>
+    <section class="container">
+      <div class="main">
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+          <label for="InputCuadrado">
+            Escribe cuánto mide cada lado de tu cuadrado:
+          </label>
+          <input id="InputCuadrado" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+    </div>
 
-    <section>
+
+    <div class="main">
       <h2>Calcula el área y perímetro de un triangulo</h2>
       <form>
         <label for="InputLado1">
@@ -62,9 +65,10 @@
           Calcular el área
         </button>
       </form>
-    </section>
+    </div>
 
-    <section>
+    <div class="main">
+
       <h2>Calcula el área y perímetro de un circulo</h2>
       <form>
         <label for="InputCirculo">
@@ -78,8 +82,10 @@
           Calcular el área
         </button>
       </form>
-    </section>
-  
+
+    </div>
+
+  </section>   
     <script src="./figuras.js"></script>
   </body>
 </html>
